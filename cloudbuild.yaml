@@ -1,4 +1,4 @@
 steps:
 - name: node:13
-  entrypoint: echo ${_MY_TEST_SUBSTITUTION}
+  entrypoint: NODE_OPTIONS=${_MY_TEST_SUBSTITUTION} npm
   args: ['install']
